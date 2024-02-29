@@ -1,0 +1,42 @@
+Includes links
+
+C:\Software\Microsoft DirectX SDK (June 2010)\Include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\CrashRpt\include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\dbghelp\include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\dxsdk\Include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\AutodeskNav\sdk\include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Scaleform\Include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Berkelium\include\berkelium;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\ChilKat\include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\PhysX\Include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\Eternity\Include;
+
+
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Apex\framework\public;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\PhysX\Source\shared\general\PxIOStream\public;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Apex\framework\public\PhysX3;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Apex\;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Apex\NxParameterized\public;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\GameEngine\gameobjects;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\RakNet\Source;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\ts3_sdk_3\include;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\VMProtect;
+
+
+
+Libraries links
+C:\Software\Microsoft DirectX SDK (June 2010)\Lib\x86;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Apex\lib;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\AutodeskNav\lib\win32_vc_9.release-mt;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Berkelium\lib;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\CrashRpt\lib;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\dbghelp\lib;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Scaleform\Lib;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\ChilKat\libs;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\jpeg-6b\lib\Win32\msvc80\release_static;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\PhysX\Lib\win32;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\Eternity\lib;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\Apex\lib\vc10win32-PhysX_3.2;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\ts3_sdk_3\lib;
+D:\Workspace\WarZDev\Projects\WarZ_VS2013\src\External\VMProtect;
+

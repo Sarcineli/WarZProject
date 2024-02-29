@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C326ABD-0ED8-49E0-AA2A-B24629A2E14D}</ProjectGuid>
+    <RootNamespace>RSUpdate</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\..\External\dxsdk\Include;.\..\External\PhysX\Foundation\include;.\..\External\PhysX\Physics\include;.\..\External\PhysX\PhysXLoader\include;.\..\External\PhysX\nxCharacter\include;.\..\External\PhysX\Cooking\include;..\Eternity\Include;..\Eternity\Source;..\External\ChilKat\include;..\External\Steamworks;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DISABLE_PHYSX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>r3dPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;strsafe.lib;d3dx9d.lib;d3d9.lib;dinput8.lib;dxguid.lib;xinput.lib;Crypt32.lib;..\External\ChilKat\Libs\ChilkatDbg.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin\build\updater\WarZlauncher_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\External\dxsdk\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\..\External\dxsdk\Include;.\..\External\PhysX\Foundation\include;.\..\External\PhysX\Physics\include;.\..\External\PhysX\PhysXLoader\include;.\..\External\PhysX\nxCharacter\include;.\..\External\PhysX\Cooking\include;..\Eternity\Include;..\Eternity\Source;..\External\ChilKat\include;..\External\Steamworks;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DISABLE_PHYSX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>r3dPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;strsafe.lib;d3dx9.lib;d3d9.lib;dinput8.lib;dxguid.lib;xinput.lib;Crypt32.lib;..\External\ChilKat\Libs\ChilkatRel.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\bin\build\updater\WarZlauncher.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\External\dxsdk\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="EULAWnd.cpp" />
+    <ClCompile Include="FirewallUtil.cpp" />
+    <ClCompile Include="GenerateUpdaterXML.cpp" />
+    <ClCompile Include="HttpDownload.cpp" />
+    <ClCompile Include="..\Eternity\Source\HWInfo.cpp" />
+    <ClCompile Include="HWInfoPost.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main_CmdLine.cpp" />
+    <ClCompile Include="r3dHttpFS.cpp" />
+    <ClCompile Include="r3dPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SelfUpdateEXE.cpp" />
+    <ClCompile Include="SteamHelper.cpp" />
+    <ClCompile Include="TexImage2D.cpp" />
+    <ClCompile Include="Updater.cpp" />
+    <ClCompile Include="UPDATER_CONFIG.cpp" />
+    <ClCompile Include="updProgress.cpp" />
+    <ClCompile Include="Win32Input.cpp" />
+    <ClCompile Include="WOBackendAPI.cpp" />
+    <ClCompile Include="WOCheckSerialHelper.cpp" />
+    <ClCompile Include="WOCreateAccHelper.cpp" />
+    <ClCompile Include="WOLoginHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EULAWnd.h" />
+    <ClInclude Include="FirewallUtil.h" />
+    <ClInclude Include="GenerateUpdaterXML.h" />
+    <ClInclude Include="HttpDownload.h" />
+    <ClInclude Include="..\Eternity\Include\HWInfo.h" />
+    <ClInclude Include="HWInfoPost.h" />
+    <ClInclude Include="ITaskbarList3.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="r3dHttpFS.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelfUpdateEXE.h" />
+    <ClInclude Include="SteamHelper.h" />
+    <ClInclude Include="TexImage2D.h" />
+    <ClInclude Include="Updater.h" />
+    <ClInclude Include="UPDATER_CONFIG.h" />
+    <ClInclude Include="updProgress.h" />
+    <ClInclude Include="Win32Input.h" />
+    <ClInclude Include="WOBackendAPI.h" />
+    <ClInclude Include="WOCheckSerialHelper.h" />
+    <ClInclude Include="WOCreateAccHelper.h" />
+    <ClInclude Include="WOLoginHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RSUpdate.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RSUpdate.rc2" />
+    <None Include="res\steam_api.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\warz_icon_01.ico" />
+    <Image Include="res\warz_icon_02.ico" />
+    <Image Include="res\warz_icon_03.ico" />
+    <Image Include="gfx\back_expired.png" />
+    <Image Include="gfx\back_login.png" />
+    <Image Include="gfx\back_register.png" />
+    <Image Include="gfx\back_register_2.png" />
+    <Image Include="gfx\back_starting.png" />
+    <Image Include="gfx\back_update.png" />
+    <Image Include="gfx\btn_applynewkey_hover.png" />
+    <Image Include="gfx\btn_close_on.png" />
+    <Image Include="gfx\btn_fb_hover.png" />
+    <Image Include="gfx\btn_forums_hover.png" />
+    <Image Include="gfx\btn_get_serial_hover.png" />
+    <Image Include="gfx\btn_getnewkey_hover.png" />
+    <Image Include="gfx\btn_login_hover.png" />
+    <Image Include="gfx\btn_myacc_hover.png" />
+    <Image Include="gfx\btn_pg_hover.png" />
+    <Image Include="gfx\btn_pg_on.png" />
+    <Image Include="gfx\btn_register_hover.png" />
+    <Image Include="gfx\btn_register_new_hover.png" />
+    <Image Include="gfx\btn_support_hover.png" />
+    <Image Include="gfx\btn_t_hover.png" />
+    <Image Include="gfx\btn_validate_hover.png" />
+    <Image Include="gfx\btn_yt_hover.png" />
+    <Image Include="gfx\pb_center.png" />
+    <Image Include="gfx\pb_left.png" />
+    <Image Include="gfx\pb_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eternity\Eternity.vcxproj">
+      <Project>{3d51be84-6441-4ac7-a73f-587c6b36ddaf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="RSUpdate.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

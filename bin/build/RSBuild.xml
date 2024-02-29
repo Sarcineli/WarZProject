@@ -1,0 +1,138 @@
+<build>
+ <output dir="build\data\"/>
+ 
+ <cdn url="https://192.168.21.100/wz/data/"/>
+
+  <!-- set base archive fosr incremental update 
+  <base file="C:\WarZ\bin\build\data\wz"/> -->
+  
+ <!-- include SDK setups -->
+ <include mask="vcredist_x64.exe"/>
+ <include mask="dxwebsetup.exe"/>
+ <include mask="VMProtectSDK32.dll"/>
+
+ <!-- excludes for this package files (just in case they were created in this dir) -->
+ <exclude mask="WZ_*.bin"/>
+ 
+ <!-- exclude ts3 license -->
+ <exclude mask="LICENSE"/>
+ <exclude mask="licensekey.dat"/>
+
+ <!-- exclude server data from map folders -->
+ <exclude mask="*ServerData.xml"/>
+ <exclude mask="*Missions.xml"/>
+ <exclude mask="*navigation\autodesk\*"/>
+ 
+ <!-- excludes for debug files -->
+ <exclude mask="*.txt"/>
+ <exclude mask="*.pdb"/>
+ <exclude mask="*.exp"/>
+ <exclude mask="*.lib"/>
+ <exclude mask="*.bat"/>
+ <exclude mask="*.vmp"/>
+ <exclude mask="fmodexL.dll"/>
+ <exclude mask="fmod_event_netL.dll"/>
+ <exclude mask="fmod_eventL.dll"/>
+
+ <exclude mask="GBClient.dll"/>
+ <exclude mask="GBClientD.dll"/>
+ 
+ <exclude mask="PhysX3PROFILE_x86.dll"/>
+ <exclude mask="PhysX3CHECKED_x86.dll"/>
+ <exclude mask="PhysX3CookingCHECKED_x86.dll"/>
+ <exclude mask="PhysX3CookingPROFILE_x86.dll"/>
+ <exclude mask="PhysX3GpuCHECKED_x86.dll"/>
+ <exclude mask="PhysX3GpuPROFILE_x86.dll"/>
+ <exclude mask="PhysX3GpuCHECKED_x86.dll"/>
+ <exclude mask="PhysX3GpuPROFILE_x86.dll"/>
+ <exclude mask="PhysX3CommonPROFILE_x86.dll"/>
+ <exclude mask="PhysX3CommonCHECKED_x86.dll"/>
+ <exclude mask="PhysX3CharacterKinematic_x86.dll"/>
+ <exclude mask="PhysX3CharacterKinematicCHECKED_x86.dll"/>
+ <exclude mask="PhysX3CharacterKinematicPROFILE_x86.dll"/>
+ 
+ <exclude mask="APEX_Common_Legacy_x86.dll"/>
+ <exclude mask="APEX_Common_LegacyCHECKED_x86.dll"/>
+ <exclude mask="APEX_Common_LegacyPROFILE_x86.dll"/>
+ <exclude mask="APEX_Destructible_Legacy_x86.dll"/>
+ <exclude mask="APEX_Destructible_LegacyCHECKED_x86.dll"/>
+ <exclude mask="APEX_Destructible_LegacyPROFILE_x86.dll"/>
+ <exclude mask="APEX_Destructible_x86.dll"/>
+ <exclude mask="APEX_DestructibleCHECKED_x86.dll"/>
+ <exclude mask="APEX_DestructiblePROFILE_x86.dll"/>
+ <exclude mask="APEX_Framework_Legacy_x86.dll"/>
+ <exclude mask="APEX_Framework_LegacyCHECKED_x86.dll"/>
+ <exclude mask="APEX_Framework_LegacyPROFILE_x86.dll"/>
+ <exclude mask="ApexFramework_x86.dll"/>
+ <exclude mask="ApexFrameworkCHECKED_x86.dll"/>
+ <exclude mask="ApexFrameworkPROFILE_x86.dll"/>
+ <exclude mask="VMProtectSDK32.dll"/>
+
+ <exclude mask="NavGenLauncher\*"/>
+ 
+ <!-- excludes for PS3 files -->
+ <exclude mask="*.sc3"/>
+ <exclude mask="MAT-SPLAT_PS3.DDS"/>
+ 
+ <!-- old physics files -->
+ <exclude mask="*.mphx"/>
+ <exclude mask="*.cphx"/>
+
+ <!-- no longer needed. baked into scb -->
+ <exclude mask="*.wgt"/>
+
+ <!-- excludes for other binaries -->
+ <exclude mask="Studio*.*"/>
+ <exclude mask="FriendsServer.*"/>
+ <exclude mask="MasterServer.*"/>
+ <exclude mask="WZ_GameServer.*"/>
+ <exclude mask="SupervisorServer.*"/>
+ <exclude mask="ts3server_win32.dll"/>
+ <exclude mask="licensekey.dat"/>
+ <exclude mask="RSBuild.*"/>
+ <exclude mask="RSUpdate.*"/>
+ <exclude mask="WZAdmin.*"/>
+ <exclude mask="*.log"/>
+ <exclude mask="*.suo"/>
+ <exclude mask="*.bat"/>
+ <exclude mask="*.tga"/>
+ <exclude mask="gameSettings.ini"/>
+ <exclude mask="local.ini"/>
+ <exclude mask="windows_error_report_mapping.xml"/>  
+ <exclude mask="serverkey.dat"/>
+
+ <exclude mask="Data\LangPack\LangPackFixer.exe"/>
+
+ <!-- punkbuster, install file must be included -->
+ <exclude mask="pb\*"/>
+ <include mask="pb\pbsvc_zombie.exe"/>
+ 
+ <!-- excludes for build directories -->
+ <exclude mask="NavGenLauncher"/>
+ <exclude mask="1"/>
+ <exclude mask="build"/>
+ <exclude mask="logs"/>
+ <exclude mask="logms"/>
+ <exclude mask="logss"/>
+ <exclude mask="logsv"/>
+ <exclude mask="data\shaders\DX9_P1"/>
+ <exclude mask="data\shaders\TEXTURE\CCLUt3D\External"/>
+ <exclude mask="data\sounds\raw"/>
+ <exclude mask="data\Editor\PreviewCache"/>
+ <exclude mask="data\tests"/>
+ <exclude mask="data\TerrainData\Heightmaps"/>
+ <exclude mask="data\TerrainData\Materials\Survival_Map"/>
+ 
+ <exclude mask="Data\Grass\Tint_Survival_01.dds"/>
+ 
+<exclude mask="data\Water\WavesGenerator.exe"/>
+ <!-- explude objects depot -->
+<exclude mask="data\ObjectsDepot\GAMEPLAY"/>
+<exclude mask="data\ObjectsDepot\Editor"/>
+<exclude mask="data\ObjectsDepot\Engine_Features"/>
+<exclude mask="data\ObjectsDepot\SS_Buildings"/>
+
+<!-- exlude levels -->
+<exclude mask="levels\WorkInProgress"/>
+
+</build>

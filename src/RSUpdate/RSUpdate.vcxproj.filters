@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="gfx">
+      <UniqueIdentifier>{db3c67ac-1437-4aec-a975-c43c6b4268cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EULAWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FirewallUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateUpdaterXML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpDownload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Eternity\Source\HWInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HWInfoPost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main_CmdLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r3dHttpFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r3dPCH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SelfUpdateEXE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TexImage2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Updater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UPDATER_CONFIG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="updProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WOBackendAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WOCheckSerialHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WOCreateAccHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WOLoginHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EULAWnd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FirewallUtil.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenerateUpdaterXML.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpDownload.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Eternity\Include\HWInfo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HWInfoPost.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITaskbarList3.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="r3dHttpFS.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelfUpdateEXE.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamHelper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TexImage2D.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Updater.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UPDATER_CONFIG.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="updProgress.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Input.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WOBackendAPI.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WOCheckSerialHelper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WOCreateAccHelper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WOLoginHelper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RSUpdate.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RSUpdate.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\steam_api.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\warz_icon_01.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\warz_icon_02.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\warz_icon_03.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="gfx\back_expired.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\back_login.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\back_register.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\back_register_2.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\back_starting.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\back_update.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_applynewkey_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_close_on.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_fb_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_forums_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_get_serial_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_getnewkey_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_login_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_myacc_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_pg_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_pg_on.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_register_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_register_new_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_support_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_t_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_validate_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\btn_yt_hover.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\pb_center.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\pb_left.png">
+      <Filter>gfx</Filter>
+    </Image>
+    <Image Include="gfx\pb_right.png">
+      <Filter>gfx</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
